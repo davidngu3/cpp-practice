@@ -2,8 +2,14 @@
 
 using namespace std;
 
+void sayHi(string name, int age) {
+    cout << "Hello" << name << " nguyen, you are" << age << " years old";
+}
+
+
 int main()
 {
-    cout << "Hello World" << endl;
+    sayHi("David", 23);
+
     return 0;
 }
