@@ -4,17 +4,13 @@ using namespace std;
 
 int main()
 {
-    int numberGrid[3][2] = {
-        {1, 2},
-        {3, 4},
-        {5, 6}
-    };
+    int age = 19;
 
-    for (int i = 0; i < sizeof(numberGrid) / sizeof(numberGrid[0]); i++) {
-        for (int j = 0; j < sizeof(numberGrid[0]) / sizeof(numberGrid[0][0]); j++) {
-            cout << numberGrid[i][j];
-        } 
-    } 
+    int *pAge =  &age; // pointer to address of age
+    double gpa = 2.7;
+    double *pGpa = & gpa;
+
+    cout << pAge;
 
     return 0;
 }
